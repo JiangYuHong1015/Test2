@@ -1,0 +1,496 @@
+html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, em, button { margin:0; padding:0; }
+html { background-color:#FFF; }
+body { background-color:#f4f4f4!important; font-size:12px; line-height:1.5; font-family:Tahoma,Simsun,sans-serif; color:#333; }
+img, fieldset { margin:0; padding:0; border:0; }
+input, textarea { font-size:12px; }
+table { border-collapse:collapse; }
+/* a { color:#06c; text-decoration:none; outline:none; } */
+a:hover { text-decoration:underline; }
+h1, h2, h3, h4, h5 { font-family:Arial,Simsun,sans-serif; font-size:100%; }
+ul li, ol li { list-style:none; }
+dfn { font:normal 12px Arial; }
+section { display:block; }
+img{vertical-align: middle;}
+.layoutfix { display:inline-block; }
+.layoutfix { display:block; overflow:hidden; }
+.basefix { *zoom:1; }
+.basefix:after { clear:both; content:'.'; display:block; height:0; overflow:hidden; }
+.base_warning { color:#d81921; font:normal 12px Simsun; }
+.float_left { float:left !important; }
+.float_right { float:right !important; }
+.base_txtgray { color:#999; }
+.invisible { visibility:hidden !important; }
+.hidden { display:none !important; }
+.base_txtdiv { border-bottom:1px dashed #16B; cursor:pointer; }
+.text_right { text-align:right !important; }
+.border_none { border:0 none !important; }
+.base_orange{color: #f60;}
+
+.inputSel { color: #999; }
+tt.mark { background-color:#ffff00 !important; }
+/* close button */
+.c_close{position:absolute;z-index:20;right:10px;top:8px;width:20px !important;height:20px !important;margin:0  !important;padding:0 !important;line-height:20px !important;text-align:center;color:#666 !important;background:none !important;border:none !important;font:bold 16px/20px Simsun;}
+.c_close:hover{text-decoration:none !important; color:#FFA800 !important;}
+/*------------------------------------------------------- hotel common part icon BEGIN -----------------------------------*/
+
+/* head width */
+.cui_hd, .cui_nav { width:1180px; }
+
+/*=s stars & diamonds */
+.hotel_diamond01,
+.hotel_diamond02,
+.hotel_diamond03,
+.hotel_diamond04,
+.hotel_diamond05,
+.hotel_diamond06,
+.hotel_halfdiamond01,
+.hotel_halfdiamond02,
+.hotel_halfdiamond03,
+.hotel_halfdiamond04,
+.hotel_halfdiamond05,
+.hotel_halfdiamond06,
+.hotel_stars01,
+.hotel_stars02,
+.hotel_stars03,
+.hotel_stars04,
+.hotel_stars05{display:inline-block;background:url(//pic.c-ctrip.com/hotelcommon/icon_hotel4.png) no-repeat;overflow:hidden;vertical-align:middle;}
+
+.hotel_stars01,
+.hotel_stars02,
+.hotel_stars03,
+.hotel_stars04,
+.hotel_stars05{height:16px;background-position:0 -10px;}
+.hotel_stars01{width:12px;}
+.hotel_stars02{width:24px;}
+.hotel_stars03{width:36px;}
+.hotel_stars04{width:48px;}
+.hotel_stars05{width:60px;}
+
+.hotel_diamond01,
+.hotel_diamond02,
+.hotel_diamond03,
+.hotel_diamond04,
+.hotel_diamond05,
+.hotel_diamond06,
+.hotel_halfdiamond01,
+.hotel_halfdiamond02,
+.hotel_halfdiamond03,
+.hotel_halfdiamond04,
+.hotel_halfdiamond05,
+.hotel_halfdiamond06{height:12px;}
+.hotel_diamond01, .hotel_halfdiamond01{width:11px;}
+.hotel_diamond02, .hotel_halfdiamond02{width:23px;}
+.hotel_diamond03, .hotel_halfdiamond03{width:35px;}
+.hotel_diamond04, .hotel_halfdiamond04{width:47px;}
+.hotel_diamond05, .hotel_halfdiamond05{width:59px;}
+.hotel_diamond06, .hotel_halfdiamond06{width:71px;}
+.hotel_diamond01,
+.hotel_diamond02,
+.hotel_diamond03,
+.hotel_diamond04,
+.hotel_diamond05,
+.hotel_diamond06{background-position:0 3px;}
+.hotel_halfdiamond01{background-position:-72px 3px;}
+.hotel_halfdiamond02{background-position:-60px 3px;}
+.hotel_halfdiamond03{background-position:-48px 3px;}
+.hotel_halfdiamond04{background-position:-36px 3px;}
+.hotel_halfdiamond05{background-position:-24px 3px;}
+.hotel_halfdiamond06{background-position:-12px 3px;}
+/*=e stars & diamonds */
+
+/*=s medals */
+.hotel_goldmedal,
+.hotel_silvermedal,
+.hotel_bluemedal,
+.hotel_strategymedal{display:inline-block;width:20px;height:20px;background:url(//pic.c-ctrip.com/hotelcommon/icon_hotel4.png) no-repeat;}
+
+.hotel_goldmedal{background-position:-34px -27px;}
+.hotel_silvermedal{background-position:-66px -27px;}
+.hotel_bluemedal{background-position:-98px -27px;}
+.hotel_strategymedal{width:22px;height:22px;background-position:0 -27px;}
+/*=e medals */
+
+.upload-img-list li:hover .icon-del,
+.upload-img-list li.hover .icon-del,
+.submit_box .t .ico_weibo,
+.prize_tips_i{background-image: url(//pic.c-ctrip.com/htlpic/hotels/comment/ico_comment.png?161009.png); background-repeat: no-repeat;}
+
+.icon-error,
+.comment_input .integral_rule_link i,
+.submit_box .n_rule i,
+.msg_comment_success i,
+.msg_status .i_error{ background-image: url(//pic.c-ctrip.com/hotelcommon/msg-bg.png); background-repeat: no-repeat;}
+
+
+
+/*------------------------------------------------------- hotel common part icon END -----------------------------------*/
+
+/* COMMON BEGIN */
+/* Structure Begin */
+#base_bd { width:1180px;padding:10px 10px 0;margin:0 auto; *zoom:1; *margin-bottom: 20px; }
+#base_bd:after { clear:both; content:'.'; display:block; height:0; overflow:hidden; }
+.base-main-wrap,
+.base-aside{float: left;display: inline;}
+.base-main-wrap{width: 100%;}
+.base-aside{width: 300px;margin-left: -300px;}
+.base-main-wrap .base-main{margin-right: 320px;}
+/* Structure End */
+
+/* msg B */
+.icon-error{display: inline-block;width: 12px;height: 12px;vertical-align: middle;margin-right: 5px;  background-position: -160px -136px;}
+.msg-error{color: #d80000;}
+/* msg E */
+
+/* comment input Begin */
+.hotel-comment-which {
+	position: relative;
+	padding: 5px 34px; margin-bottom: 10px;
+	background-color: #FFF;
+}
+.hotel_info_box {
+	display: block; overflow: hidden; padding-left: 5px;
+	*zoom: 1;
+}
+.hotel-comment-which .prev,
+.hotel-comment-which .next{position: absolute;top: 0;width: 34px;height: 100%;cursor: pointer;}
+.hotel-comment-which .prev:hover,
+.hotel-comment-which .next:hover{background-color: #e6e6e6;}
+.hotel-comment-which .prev{left: 0;}
+.hotel-comment-which .next{right: 0;}
+.hotel-comment-which .next-tips{position: absolute;right: 50px;top: 27px;color: #666;}
+.hotel-comment-which .icon-prev,
+.hotel-comment-which .icon-next{background: url(//pic.c-ctrip.com/hotels121118/comment/prev-next-bg.png) no-repeat;display: inline-block;width: 7px;height: 13px;margin-top: 31px;margin-left: 13px;}
+.hotel-comment-which .icon-next{background-position: -7px -13px;}
+.hotel-comment-which .icon-prev{background-position: 0 -13px;}
+.hotel-comment-which .prev.disabled .icon-prev{background-position: 0 0;}
+.hotel-comment-which .disabled .icon-prev{background-position-y: 0;}
+.hotel-comment-which .next.disabled .icon-next{background-position: -7px 0;}
+.hotel-comment-which .disabled .icon-next{background-position-y: 0;}
+
+.hotel_info_box .pic_box { float:left; display:inline; width:75px; height:75px; margin-right:16px; overflow:hidden; }
+.hotel_info_box .pic_box .p { width:75px; height:75px; }
+.hotel_info_box .info_box .name { margin:12px 0 6px; font-size:14px; font-weight:bold; }
+.info_box .name .n { padding-right:8px; }
+.hotel_info_box .info_box .room { padding-right:38px; }
+
+.hotel_name_box{ margin-bottom: 10px;}
+.hotel_name_box span{ display: inline-block; vertical-align: middle;}
+.hotel_name_box .name{ padding:0 6px 0 3px; font-size: 18px; font-weight: bold;}
+.comment_box .comment_table {
+	width: 100%;
+	table-layout: fixed; border-collapse: collapse ;
+}
+.comment_box .promotion{font-size: 14px;margin-bottom: 5px;}
+.comment_box .promotion .b { color:#f60; font-weight:bold; }
+.comment_box .promotion .promotion_rule {
+	display: inline-block; margin-left: 10px;
+}
+.comment_box .promotion_box{ padding: 8px 10px 8px 150px; margin-bottom: 10px; color: #666; font-size: 14px; border: 1px solid #f9cf97; background: url(//pic.c-ctrip.com/hotels121118/comment/bg_promotion_box.png) no-repeat 0 -5px #fdf3e7;}
+.comment_box .promotion_box .orange{ color: #f60;}
+.comment_table .title_th {
+	width: 100px; padding-top: 10px; border-right: 1px dashed #ddd; border-bottom: 5px solid #f4f4f4;
+	background-color: #fbfbfb; color: #666;
+	text-align: center; font-family: microsoft yahei; font-size: 16px; font-weight: normal; vertical-align: top;
+}
+.comment_table .title_th span{ display: block; padding-top: 3px; font-size: 12px; color: #999;}
+.comment_table .content_td {
+	position: relative; width: 90%; padding: 16px; border-bottom: 5px solid #f4f4f4;
+	background-color: #fff;
+}
+.comment_table .content_td .ico-price-flag{ position: absolute; top: 10px; right: -6px; width: 39px; height: 40px; background:url(//pic.c-ctrip.com/htlpic/hotels/comment/un_comment_1.png?161116.png) no-repeat 0 -614px;}
+.comment_table .td-inner{position: relative;}
+.comment_table .recommend_choose { position: absolute;right: 4px;top: -6px; width: 225px;}
+.comment_table .recommend_choose a { position:relative; display: block; width:80px; height:36px; margin-right:14px; padding-left:52px; border:1px solid #d5e8f7; line-height:36px; font-size:14px; }
+.comment_table .recommend_choose a:hover,
+.btn_recommend:hover,
+.btn_not_recommend:hover{
+	border-color: #2577E3;
+	text-decoration: none;
+}
+.comment_table .recommend_choose .yes,
+.btn_recommend{
+	background: url(//pic.c-ctrip.com/htlpic/hotels/comment/un_comment_1.png?161116.png) no-repeat -21px 2px;
+	margin-bottom: 15px;
+}
+.btn_recommend{
+	margin-bottom: 0;
+}
+.comment_table .recommend_choose .no,
+.btn_not_recommend{
+	background: url(//pic.c-ctrip.com/htlpic/hotels/comment/un_comment_1.png?161116.png) no-repeat -22px -37px;
+}
+.btn_recommend,
+.btn_not_recommend{
+	position: relative;
+	display: inline-block; width: 80px; height: 36px; margin-right: 14px; padding-left: 52px; border: 1px solid #d5e8f7;
+	line-height: 36px; font-size: 14px;
+}
+.comment_table .recommend_choose .selected,
+.btn_recommend_sel{
+	width: 78px;
+	height: 34px;
+	border: 2px solid #2577E3;
+}
+.recommend_choose a .i { display:none; }
+.recommend_choose .selected .i,
+.btn_recommend_sel .i {
+	position: absolute; right: 0; bottom: 0;
+	display: block; width: 14px; height: 14px; overflow: hidden;
+	background: url(//pic.c-ctrip.com/htlpic/hotels/comment/un_comment_1.png?161116.png) no-repeat 3px 4px #1D74E6;
+}
+.recommend_choose h3{font-size: 14px;font-weight: normal;margin-bottom: 5px;}
+.recommend_choose .tips-text{position:absolute;top: 22px;right: 0;width: 77px;color: #999;}
+
+/*.comment_table .comment-score-list{background: url(//pic.c-ctrip.com/hotels121118/comment/score-arrow-bg.png) no-repeat 365px center;}*/
+.comment_table .comment_item { display:inline-block; margin-bottom:10px; line-height:24px; }
+.comment_table .comment_item { display:block; overflow:hidden; }
+.comment_item .title { float:left; width:42px; font-size:14px; }
+.comment_item .comment_score { float:left; display:inline-block; width:140px; height:24px; margin-right:10px; background:url(//pic.c-ctrip.com/hotels121118/comment/bg_score_c.png) no-repeat -140px 0; }
+.comment_item .comment_score { display:block; overflow:hidden; }
+.comment_item .comment_score .c { float:left; display:inline; width:24px; height:24px; margin-right:4px; overflow:hidden; cursor:pointer; }
+.comment_item .txt {
+	float:left;
+	margin-right: 10px;
+}
+.comment_item .selected_1 { background-position:-112px -26px; }
+.comment_item .selected_2 { background-position:-84px -26px; }
+.comment_item .selected_3 { background-position:-56px -26px; }
+.comment_item .selected_4 { background-position:-28px -26px; }
+.comment_item .selected_5 { background-position:0 -26px; }
+.comment_item .hover_1 { background-position:-112px 0; }
+.comment_item .hover_2 { background-position:-84px 0; }
+.comment_item .hover_3 { background-position:-56px 0; }
+.comment_item .hover_4 { background-position:-28px 0; }
+.comment_item .hover_5 { background-position:0 0; }
+
+.comment_table .comment_input { margin-bottom:10px; }
+.comment_input textarea {
+	display: block; width: 99%; height: 170px; padding: 4px 4px 26px; border: 1px solid #BBB; overflow: auto;
+	resize: none;
+}
+.comment_table .comment_input .textarea_error{
+	border-color: #d80000; background-color: #fff3f3;
+}
+.comment_input .auto-save{position: relative;z-index:2;width: 99%;padding-left: 10px;height: 26px;line-height: 26px;margin-top: -26px;color: #fff;filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#B2000000', endColorstr='#B2000000');background:rgba(0,0,0,0.7);}
+.prize_tips{ position: relative; display: inline-block; padding-left: 20px; margin-bottom: 5px; color: #666; border: 1px solid #f9cf97; background-color: #fdf3e7;}
+.prize_tips .orange{ color: #f60;}
+.prize_tips_i{ position: absolute; left:-8px; top: -1px; width: 21px;height: 20px;background-position: 0px -207px;}
+.comment_input .box_tips{ *zoom:1;}
+.comment_input .box_tips:after{ clear:both; content:'.'; display:block; height:0; overflow:hidden; }
+.comment_input .integral_rule{ float: right; margin-top: 5px;}
+.box_tips .prize_tips{ margin-bottom: 0;}
+.comment_input .integral_rule_link{ margin-left: 5px;}
+.comment_input .integral_rule_link i{ display: inline-block; vertical-align: middle; margin-right: 3px; width: 12px;height: 12px;background-position: -160px -120px;}
+.comment_input .input_tips { float: left;  line-height:24px; color:#999; }
+.comment_input .input_tips .num { font-family:Georgia; font-size:20px;color: #666; }
+.comment_input .input_tips .orange{ color: #f60;}
+.comment_table .comment_input .textarea_error_msg{
+	padding-top: 7px;
+}
+.upload-img-list li{float: left;display: inline;margin: 0 10px 10px 0;border: 1px solid #D5E8F7;width: 115px;height: 115px;background: url(//pic.c-ctrip.com/hotels121118/bg_nopic1.png) no-repeat center center #FFFAF0;position: relative;}
+.upload-img-list .icon-del{display: none;}
+.upload-img-list li:hover .icon-del,
+.upload-img-list li.hover .icon-del{display:block; background-position: 3px -94px;width: 20px;height: 20px;position: absolute;top: 0;right: 0;background-color:#000;background-color: rgba(0,0,0,0.5);cursor: pointer;}
+.upload-img-list .default{background: url(//pic.c-ctrip.com/hotels121118/comment/default-upload.png) no-repeat #F7FBFF;cursor: pointer;}
+.upload-img-list .default p{text-align: center;margin-top: 80px;color: #666;}
+.upload-img-list .ele-file{width: 115px;height: 115px;opacity: 0;cursor: pointer;}
+.upload-img-list img{width: 115px;height: 115px;}
+.upload-img-list .upload-progress{position: absolute;height: 100%;width: 100%;top: 0;left: 0;}
+.upload-img-list .progress-animate{height: 100%;filter:progid:DXImageTransform.Microsoft.gradient(enabled='true',startColorstr='#7F000000', endColorstr='#7F000000');background:rgba(0,0,0,0.5);}
+.upload-img-list .progress-num{position: absolute;top: 50%;left: 50%;margin-top: -8px;margin-left: -10px;color: #fff;}
+.upload-des{color: #999;margin-bottom: 5px;}
+
+.form-text{border: 1px solid #ccc;padding: 4px;height: 18px;}
+.short-summary li{float: left;display: inline;margin-right: 80px;}
+.short-summary li.last{margin-right: 0;}
+.short-summary .summary-title{margin-bottom: 10px;}
+.short-summary .form-text{width: 210px;}
+
+.tour-type-list .type-item{float: left;display: inline;width: 80px;height: 70px;border: 1px solid #d5e8f7;margin: 0 10px 10px 0;text-align: center;position: relative;}
+.tour-type-list .type-item:hover{border-color:#2577e3; text-decoration:none;}
+.tour-type-list .type-item .icon-selected{display: none;}
+.tour-type-list .item-selected{width:78px;height: 68px;border:2px solid #2577e3;}
+.tour-type-list .item-selected .icon-selected{position:absolute; right:0; bottom:0; display:block; width:14px; height:14px; background:url(//pic.c-ctrip.com/htlpic/hotels/comment/un_comment_1.png?161116.png) no-repeat 3px 4px; background-color:#1d74e6; overflow:hidden;}
+.tour-type-list .icon-type{display: inline-block;width:30px; height:31px; margin:5px 0 2px; background:url(//pic.c-ctrip.com/hotels121118/comment/ico_comment_type.png) no-repeat;}
+.tour-type-list .item-business .icon-type{}
+.tour-type-list .item-friend .icon-type{background-position:0 -70px;}
+.tour-type-list .item-lover .icon-type{background-position:0 -175px;}
+.tour-type-list .item-family .icon-type{background-position:0 -35px;}
+.tour-type-list .item-single .icon-type{background-position:0 -105px;}
+.tour-type-list .item-for .icon-type{background-position:0 -140px;}
+.tour-type-list .item-others .icon-type{background-position:0 -210px;}
+
+.comment_btn { display:block;width:218px;height:37px;margin:20px 0 40px 116px;border:1px solid #0099E1;border-radius:3px;color:#fff;font-size:16px;font-family: "Microsoft Yahei",Simsun,sans-serif;font-weight:bold;cursor:pointer;
+	background-color:#0099E1; text-align:center; box-shadow:0 1px 0 rgba(153, 153, 153, 0.7); *filter:chroma(color=#000000); outline:none; }
+.comment_btn:hover { background-color:#f79700;border-color:#de7800;text-decoration:none;}
+
+.comment_table .comment_text{ margin-top: -6px; font-size: 14px; line-height: 24px; white-space:pre-wrap;word-wrap:break-word;}
+.comment_table .comment_pic{ *zoom:1;}
+.comment_table .comment_pic:after { clear:both; content:'.'; display:block; height:0; overflow:hidden; }
+.comment_table .comment_pic img{ float: left; margin:10px 10px 0 0;}
+.comment_table .comment_add textarea{ display: block; padding:4px; margin:0 auto; width: 1036px; height: 92px; overflow: auto; border: 1px solid #ddd; resize:none; }
+.comment_table .textarea_remind{ line-height: 24px; color: #999; text-align: right;}
+.comment_table .textarea_remind .num{ display: inline-block;vertical-align: 1px; padding: 0 2px; font-size: 20px; font-weight: 700; font-style: italic; font-family: Georgia;}
+.comment_table .comment_add .warning_txt{ margin-bottom: 0;}
+/* comment input End */
+
+/* comment complete Begin */
+.submit_box { position:relative; width:940px; min-height:200px; margin:40px auto; padding-left:80px; }
+.submit_box .ico_ok, .submit_box .ico_error{ float:left; width:64px; height:64px; margin-left:-78px; overflow:hidden; background:url(//pic.c-ctrip.com/htlpic/hotels/comment/un_comment_1.png?161116.png) no-repeat 0 -430px;}
+.submit_box .ico_error { background-position:0 -496px; }
+.submit_box .t { margin-bottom:6px; padding:10px 0; border-bottom:1px dashed #ccc;}
+.submit_box .t .txt{ font:normal 22px/22px "microsoft yahei"; color:#666;}
+.submit_box .t .btn{ position: relative; float: right; margin-left: 15px; color: #333; font-weight: bold; background-color: #fff; border: 1px solid #b6b6b6; border-radius: 3px; box-shadow:0 1px 0 #c3c3c3;}
+.submit_box .t .btn_price{ padding: 4px 25px; text-align: center;}
+.submit_box .t .btn_weibo{ padding: 4px 15px 4px 35px;}
+.submit_box .t .ico_weibo{position: absolute; top: 6px; left: 12px; width: 16px;height: 14px;background-position: 0px -161px;}
+.submit_box .t .ico_price_flag{ position: absolute; top: -2px; right: -6px; width: 23px;height: 27px; background:url(//pic.c-ctrip.com/htlpic/hotels/comment/un_comment_1.png?161116.png) no-repeat -41px -613px;}
+.submit_box .t .btn:hover{ text-decoration: none;}
+.submit_box .n{ padding-bottom: 10px; font-size: 14px;}
+.submit_box .n_rule{ float: right; font-size: 12px; }
+.submit_box .n_rule i{ display: inline-block; vertical-align: middle; margin-right: 3px; width: 12px;height: 12px;background-position: -160px -120px;}
+.submit_box .link { margin-top:20px; margin-bottom:20px; }
+.submit_box .view_comment { display:inline-block; height:22px; margin-right:10px; padding:0 10px; border:1px solid #88b6e3; border-radius:2px; background-color:#e6f3ff; font-weight:bold; line-height:22px; box-shadow:0 1px 0 rgba(204, 204, 204, 0.7); }
+.submit_box .view_comment:hover { background-color:#185a96; text-decoration:none; color:#fff; }
+.submit_box .no-avatar{margin-bottom: 10px;}
+.submit_box .no-avatar .avatar-img{display: inline-block;vertical-align: middle;width: 35px;height: 35px;padding: 2px;border:1px solid #ccc;background: url(//pic.c-ctrip.com/hotels121118/comment/default-user.png) no-repeat center center;margin-right: 10px;}
+
+
+.base_title{ margin-bottom:10px;}
+.base_title h3{ font-size:18px; font-family:"microsoft yahei";}
+.base_title_more{ float: right; margin-top: 3px;}
+/*s= msg_comment*/
+.msg_comment{ padding: 15px 0; margin-bottom: 10px; height: 150px; background-color: #fff;}
+.msg_comment_l{ float: left;}
+.msg_comment_l .item{ padding-left: 110px; height:50px; line-height: 50px; font-size: 14px;}
+.msg_comment_l .item .c{ width: 100px; display: inline-block;}
+.msg_comment_l .item a{ display: inline-block; vertical-align: middle; margin-right: 10px; width: 98px; height: 28px; line-height: 28px; color: #06c; text-align: center; border: 1px solid #d5e8f7; border-radius: 3px; }
+.msg_comment_l .item a:hover{ border-color: #39f; text-decoration: none;}
+.msg_comment_l .item .current{ background-color: #39f; color: #fff; border-color: #39f; cursor: default;}
+.msg_comment_r{ float: right; width: 275px; height: 150px; text-align: center; border-left: 1px dashed #ccc; }
+.msg_comment_r a{ display: inline-block; margin-top: 60px; width: 136px; height: 36px; line-height: 36px; font-size: 16px; font-weight: bold; color: #fff; text-align: center; background-color: #ffb000; border: 1px solid #e8810a; border-radius: 3px;}
+.msg_comment_r a:hover{ text-decoration: none; background-color: #f60;}
+.msg_comment_r .disabled,.msg_comment_r .disabled:hover{ background-color: #e6e6e6; border: 1px solid #ddd; cursor: default;}
+
+.msg_comment_success{ margin-top: 60px; font-size: 14px; text-align: center;}
+.msg_comment_success i{ display: inline-block; vertical-align: middle; margin-right: 5px; width: 16px;height: 16px;background-position: -176px -124px;}
+
+.msg_status{ text-align: center;}
+.msg_status .i_load{ display: inline-block; vertical-align: middle; margin-right: 5px; width: 18px; height:18px; background: url(//pic.c-ctrip.com/common/loading_18.gif) no-repeat;}
+.msg_status .i_error{display: inline-block; vertical-align: middle; margin-right: 5px; width: 12px; height:12px; background-position: -160px -136px;}
+/*e= msg_comment*/
+/*s= wait_comment*/
+.wait_comment{ overflow: hidden; margin-bottom: 30px;}
+.wait_comment ul{ margin-left: -10px; *zoom:1;}
+.wait_comment li{ position: relative; float: left; padding: 10px 10px 0 115px; margin: 0 0 10px 10px; width: 340px; height: 105px; background-color: #fff;}
+.wait_comment .pic{ float: left; margin-left: -105px; width: 95px; height: 95px;}
+.wait_comment .title{ font-size: 14px; color: #06c; font-weight: bold; overflow:hidden;white-space:nowrap;text-overflow:ellipsis;}
+.wait_comment .time{ padding-top: 5px; color: #666;}
+.wait_comment .comment{ padding-top: 30px; color: #666;}
+.wait_comment .comment .orange{ color: #f60;}
+.wait_comment .comment .btn{ float: right; margin-top: -5px; width: 78px; height: 26px; line-height: 26px; color: #fff; text-align: center; background-color: #ffb000; border: 1px solid #e8810a; border-radius: 3px;}
+.wait_comment .comment .btn:hover{ text-decoration: none; background-color: #f60;}
+/*e= wait_comment*/
+.hotel_comment .comment_list{position:relative; margin-bottom:10px; border:1px solid #ddd; overflow:hidden; background-color: #fff;}
+.hotel_comment .comment_info{width:480px;}
+.hotel_comment .comment_info p{padding:8px;}
+.hotel_comment .comment_value{position:absolute; top:50%; right:0; width:240px; height:2000px; margin-top:-1000px; line-height:2000px; cursor:pointer; text-align:center; color:#06c; background-color:#dbe8f4;}
+.hotel_comment .comment_value:hover{text-decoration:none; color:#fff; background-color:#2577e3;}
+.hotel_comment .comment_more{ margin-top: -30px; margin-bottom: 10px; text-align:right; font-family:"Simsun";}
+.hotel_comment .comment_more a{color:#06c;}
+/* comment complete End */
+
+/* aside  */
+.base-aside .aside-block{border: 1px solid #F0F0F0;background-color: #fff;margin-bottom: 20px;}
+.aside-block .block-title{font-size: 16px;font-family: "microsoft yahei";padding-left: 10px;font-weight: normal;line-height: 30px;}
+.aside-block .block-bd{margin: 0 10px;}
+
+.block-how-comment .block-bd {line-height: 1.8;padding-bottom: 10px;}
+.block-how-comment h3{margin-top: 10px;}
+
+.comment-list .comment-item{padding: 20px 0;border-bottom: 1px dashed #ccc;}
+.comment-item .comment-user{position: relative;padding-left: 51px;min-height: 41px;height: auto !important;height: 41px;margin-bottom: 5px;}
+.comment-item .user-img{width: 35px;height: 35px;border: 1px solid #ccc;padding: 2px;position: absolute;left: 0;top: 0;background: url(//pic.c-ctrip.com/hotels121118/comment/default-user.png) no-repeat center center #fff;}
+.comment-item .user-img img{width: 35px;height: 35px;}
+.comment-item .comment-text{line-height: 1.8;margin-bottom: 10px;}
+.comment-item .comment-text p{ word-wrap:break-word; word-break:break-all;}
+.comment-item .comment-text .show{ height:130px; overflow:hidden; *zoom:1;}
+.comment-item .btn-expanded{display: block;margin-left: auto;width: 60px;}
+.comment-item .btn-expanded .icon-arrow{display: inline-block;width: 0;height: 0;vertical-align: middle;border-top:5px solid #06c;border-left: 5px dashed transparent;border-right: 5px dashed transparent;}
+.comment-item .useful {border: 1px solid #9fc2ff;display: inline-block;font-size: 12px;height: 22px;line-height: 22px;text-align: center;vertical-align: middle;white-space: nowrap;width: 70px;}
+.comment-item .useful:hover {text-decoration: none;}
+.comment-item .useful .n {color: #999;}
+.comment-item .useful_voted .n {color: #333;}
+.comment-item .useful_hover, .comment-item .voted {background-color: #2577e3;color: #fff;display: inline-block;font-size: 12px;height: 22px;line-height: 22px;text-align: center;vertical-align: middle;width: 72px;}
+.comment-item .useful_hover:hover, .comment-item .voted:hover {text-decoration: none;}
+.comment-item .comment_txt .useful_hover, .comment-item .comment_txt .voted {height: 22px;line-height: 22px;width: 70px;}
+.block-comment-list .btn-how-comment{line-height: 40px;}
+
+/* hover-tips */
+.hover-tips{border: 1px solid #67A1E2;padding: 10px;}
+.hover-tips--how-comment{padding-top: 0;line-height: 1.8;background-color: #fff;}
+.hover-tips--how-comment h3{margin-top: 10px;}
+.hover-tips--upload-img{padding: 2px;border:2px solid #ccc;}
+
+/* modal */
+/* Base Pop Begin */
+.pop-box { position: relative;  padding:10px 15px 20px; font-family:Tahoma, Simsun; border:9px solid #DCDCDC; background-color:#FFF; }
+.pop-box .pop-hd {  height:28px; margin-bottom:10px; padding-bottom:5px; border-bottom:1px solid #E1E1E1; font:bold 14px/28px Tahoma, Simsun; }
+.pop-box .c_close { position:absolute; right:0; top:0; padding:0 5px; font:normal 18px/28px Tahoma; color:#CCC; }
+.pop-box .c_close:hover { text-decoration: none; color:#FFA800; }
+.pop-box .pop-ft { text-align:center; margin-top: 10px; }
+.pop-box .btn{ font-size:12px;height:24px; margin-right:10px; padding:0 10px; font-weight:bold; text-align:center; line-height:24px;display: inline-block;background-color: #fff;border:1px solid #D1D1D1;box-shadow: 0 1px 1px rgba(0,0,0,.2);border-radius: 3px;vertical-align: middle;}
+.pop-box .btn:hover{text-decoration: none;background-color: #06c;border-color:#06c;color: #fff;}
+.pop-box .btn-primary{background-color:#27C; border:1px solid #05A; color:#FFF;}
+.pop-box .btn-primary:hover{background-color:#29F; border-color:#07D;}
+/* Base Pop End */
+.pop-box--how-comment p{margin-bottom: 10px;}
+.commit_lottery{float:right; padding-top: 2px; margin-bottom: 8px;text-align: right;font-size: 12px;}
+.commit_lottery .orange{ color: #f60;}
+a.commit_lottery_ip6{display: block;margin: 20px auto;}
+a.commit_lottery_ip6 img{width: 100%;}
+
+.frame_box{width: 980px;margin: 0 auto;}
+
+.promotion_rule_box{ width: 710px;}
+.promotion_rule_box .mb_10{ margin-bottom: 10px;}
+.promotion_rule_box .c_close{
+	position: static;
+	float: right; margin-top: 3px!important;
+}
+.promotion_rule_box .pop-hd{ height: auto;}
+.promotion_rule_box .pop-hd-s {
+	margin-bottom: 10px;
+	font-size: 14px; font-weight: normal;
+}
+.promotion_rule_box .pop-hd-rule {
+	margin-bottom: 5px;
+	color: #666;
+	font-size: 14px;
+}
+.promotion_rule_box .table_t {
+	margin-bottom: 12px;
+	color: #333;
+	font-weight: bold;
+}
+.promotion_rule_box .table_rule{ margin-bottom: 20px; width: 100%; text-align: left;}
+.promotion_rule_box .table_rule th,.promotion_rule_box .table_rule td{ padding: 10px 25px; border:1px solid #e2e2e2; }
+.promotion_rule_box .table_rule th {
+	background-color: #f5f5f5; color: #666;
+	font-weight: bold;
+}
+.promotion_rule_box .table_rule .col1{width: 160px; text-align: center;}
+.promotion_rule_box .table_rule .col2{ width: 160px; text-align: center;}
+.promotion_rule_box .table_rule th.col3{ text-align: center;}
+.promotion_rule_box .rule_ex li{ padding-left: 15px;}
+.promotion_rule_box .rule_ex .dot{ display: inline-block; vertical-align: middle; margin-right: 6px; font-weight: bold; font-size: 14px;}
+.promotion_rule_box .rule_tips p{
+	line-height: 20px;
+}
+/* ie8 & <l200 add class="ie8w980" to body or html label,ie6/7 use 1180 version directly */
+.ie8w980 .cui_hd,.ie8w980 .cui_nav,.ie8w980 #base_bd{width:980px !important;}
+
+@media screen and (max-width:1200px) {
+	#base_bd { width:980px; padding: 0 10px; overflow: hidden; }
+	.cui_hd,.cui_nav{width:980px;}
+}

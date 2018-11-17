@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bdqn.mapper.contact.ContactMapper">
+	
+	<!--  增加联系人 -->
+	<insert id="addContact" parameterType="Contact">
+    	insert into contact(contactName,phone,createBy,createDate
+	   
+	    <trim prefix="," suffix=")" suffixOverrides=",">
+	      <if test="passport != null">
+	        passport,
+	      </if>
+	      <if test="idCard != null">
+	        idCard,
+	      </if>
+	    </trim>
+	    
+	    values(#{contactName},#{phone},#{createBy},#{createDate}
+	    <trim prefix="," suffix=")" suffixOverrides=",">
+	      <if test="passport != null">
+	        #{passport},
+	      </if>
+	      <if test="idCard != null">
+	        #{idCard},
+	      </if>
+	    </trim>
+	 </insert>
+	 
+	 <!--  获取联系人列表 -->
+	 <select id="getContactList" resultType="contact">
+	 	SELECT * FROM contact where createBy = #{createBy}
+	 		<if test="contactName != null and contactName != '' ">
+	 			and contactName like CONCAT ('%',#{contactName},'%')
+	 		</if>
+	 		<if test="phone != null and phone != '' ">
+	 			and phone = #{phone}
+	 		</if>
+	 		order by createDate DESC limit #{from},#{pageSize}
+	 </select>
+	 
+	<!--  获取联系人总数 -->
+	 <select id="getContactCount" resultType="int">
+	 	select count(1) as count from contact where createBy = #{createBy}
+	 		<if test="contactName != null and contactName != ''">
+	 			and contactName like CONCAT ('%',#{contactName},'%')
+	 		</if>
+	 		<if test="phone != null and phone != '' ">
+	 			and phone = #{phone}
+	 		</if>
+	 
+	 </select>
+		
+	<!--  根据id查找联系人 -->
+	<select id="getContactById" resultType="contact">
+		select * from contact where id=#{id}
+	</select>
+	
+	
+	<!--  根据id修改联系人 -->
+	<update id="updateContactById" parameterType="contact">
+		UPDATE contact SET contactName=#{contactName},phone=#{phone},
+			idCard=#{idCard},passport=#{passport},modifyBy=#{modifyBy},modifyDate=#{modifyDate}
+			WHERE id = #{id}
+	</update>
+	
+	<!--  根据id删除联系人 -->
+	<delete id="deleteContactById" parameterType="int">
+		DELETE FROM contact WHERE id = #{id}
+	</delete>
+	
+	
+</mapper>

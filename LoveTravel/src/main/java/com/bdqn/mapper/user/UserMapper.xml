@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.bdqn.mapper.user.UserMapper">
+	
+	<!-- 根据手机号查找user -->
+	<select id="getUserByPhone" resultType="user">
+		 SELECT * FROM USER u WHERE  u.phone = #{phone}
+	
+	</select>
+	
+	<!-- 根据邮箱查找user -->
+	<select id="getUserByEmail" resultType="user">
+		 SELECT * FROM USER u WHERE  u.email = #{email}
+	
+	</select>
+	
+	<!-- 根据id查找角色名称 -->
+	<select id="getUserRoleName" resultType="user">
+		SELECT u.* ,r.roleName
+			FROM USER u,role r WHERE u.roleID = r.id AND u.id=#{id}
+	</select>
+	
+	<!-- 根据id修改user -->
+	<update id="updateUserById" parameterType="user">
+		UPDATE user SET username=#{username},userpassword=#{userpassword},phone=#{phone},
+			email=#{email},modifyby=#{modifyby},modifydate=#{modifydate}
+				WHERE id=#{id}
+	</update>
+	
+	<!-- 上传头像 -->
+	<update id="updatePhoto" parameterType="user">
+		UPDATE user SET photoName=#{photoName},photoRealPath=#{photoRealPath},photoOldName=#{photoOldName}
+			,modifyby=#{modifyby},modifydate=#{modifydate} ,photoPath=#{photoPath} where id=#{id}
+	</update>
+	
+	
+</mapper>
